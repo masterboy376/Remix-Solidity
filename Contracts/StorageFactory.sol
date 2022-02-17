@@ -4,7 +4,7 @@
 
 import "./SimpleStorage.sol";
 
-contract StorageFactory{
+contract StorageFactory is SimpleStorage{// this will make StorageFactory to inherit all the functions and the variables of SimpleStorage alaong with keeping its own function and variables intact.
 //------------------------------------------------------------------------------------
     // to view the SimpleStorage contract created via StorageFactory
     SimpleStorage[] public _simpleStorageArray;
